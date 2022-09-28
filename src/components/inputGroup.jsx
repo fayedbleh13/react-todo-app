@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useDispatch } from 'react-redux'
 import { addTodo } from "../redux/action/todo.action"
+import toast from 'react-hot-toast';
 
 export default function InputGroup({ todo, setTodo }) {
     
@@ -20,7 +21,7 @@ export default function InputGroup({ todo, setTodo }) {
             setTodo("")
         } 
         else {
-            console.log("error: input empty")
+            toast.error('Error! input field should not be empty');
         }
        
     }   
@@ -36,9 +37,9 @@ export default function InputGroup({ todo, setTodo }) {
                         onChange={handleChange}
                         placeholder="Enter name of todo.." 
                     />
-                    <button type="submit" className="flex -mr-px">
-                        <span className="button">Add</span>
-                    </button>	
+                    <button type="submit" className="flex -mr-px input-btn">
+                        Add                        
+                    </button>
                 </div>	
             </form>
         </>
