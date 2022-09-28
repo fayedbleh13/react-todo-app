@@ -17,8 +17,8 @@ function App() {
                     <p className="card-description">
                     A simple todo app. You can start by adding a todo to the list.
                     </p>
-                <InputGroup todo={todo} setTodo={setTodo} />
-                <Todolist />
+                    <InputGroup todo={todo} setTodo={setTodo} />
+                    <Todolist />
                 </div>
             </div>
         </div>
