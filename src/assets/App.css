@@ -27,9 +27,14 @@
 }
 
 .input {
-    @apply flex-shrink flex-grow leading-normal w-px flex-1 border h-10 rounded rounded-r-none px-3 relative
+    @apply flex-shrink flex-grow focus:border-purple-600 focus:outline-none leading-normal w-px flex-1 border-2 h-10 rounded rounded-r-none px-3 relative
 }
 
-.button {
-    @apply flex items-center leading-normal bg-purple-600 rounded rounded-l-none border border-l-0 border-purple-600 px-3 whitespace-nowrap text-white text-sm
+.input-btn {
+    @apply flex items-center focus:outline-none leading-normal bg-purple-600 rounded rounded-l-none px-3 whitespace-nowrap text-white text-sm
 }
+
+.remove-btn {
+    @apply inline-block px-2 py-2 text-xs font-medium text-white transition bg-red-500 rounded hover:scale-110 hover:shadow-xl active:bg-red-600 focus:outline-none focus:ring
+}
+
