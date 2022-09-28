@@ -31,10 +31,21 @@
 }
 
 .input-btn {
-    @apply flex items-center focus:outline-none leading-normal bg-purple-600 rounded rounded-l-none px-3 whitespace-nowrap text-white text-sm
+    @apply flex items-center focus:outline-none leading-normal bg-purple-600 rounded rounded-l-none px-3 whitespace-nowrap text-white text-sm transition hover:scale-110 hover:shadow-xl
 }
 
 .remove-btn {
     @apply inline-block px-2 py-2 text-xs font-medium text-white transition bg-red-500 rounded hover:scale-110 hover:shadow-xl active:bg-red-600 focus:outline-none focus:ring
 }
 
+.list-container {
+    @apply flex justify-center
+}
+
+.list-group {
+    @apply bg-white rounded-lg drop-shadow w-full text-gray-900
+}
+
+.list-item {
+    @apply flex place-content-between px-6 py-2 border-b border-gray-200 w-full rounded-t-lg
+}

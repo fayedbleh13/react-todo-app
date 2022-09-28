@@ -8,11 +8,11 @@ export default function Todolist() {
     const dispatch = useDispatch()
     
     return (
-        <div className="flex justify-center">
-            <ul className="bg-white rounded-lg drop-shadow w-full text-gray-900">
+        <div className="list-container">
+            <ul className="list-group">
                 {
                     todos?.map((todo) => (
-                        <li className="flex place-content-between px-6 py-2 border-b border-gray-200 w-full rounded-t-lg" key={todo.id}>
+                        <li className="list-item" key={todo.id}>
                             <p className="place-self-center">{todo.task}</p>
                             <button className="remove-btn" onClick={() => dispatch(deleteTodo(todo.id))}>Remove</button>
                         </li>
