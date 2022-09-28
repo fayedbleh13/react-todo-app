@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.background {
+    @apply bg-[#161618] h-screen
+}
+
+.card-container {
+    @apply flex items-center justify-center h-[50vh]
+}
+
+.card-body {
+    @apply block p-6 rounded-lg shadow-lg bg-white max-w-lg
+}
+
+.card-title {
+    @apply text-gray-900 text-center text-3xl leading-tight font-bold mb-2
+}
+
+.card-description {
+    @apply text-gray-500 text-base mb-4
+}
+
+.input-group {
+    @apply flex flex-wrap items-stretch w-full mb-4 relative
+}
+
+.input {
+    @apply flex-shrink flex-grow leading-normal w-px flex-1 border h-10 rounded rounded-r-none px-3 relative
+}
+
+.button {
+    @apply flex items-center leading-normal bg-purple-600 rounded rounded-l-none border border-l-0 border-purple-600 px-3 whitespace-nowrap text-white text-sm
+}
